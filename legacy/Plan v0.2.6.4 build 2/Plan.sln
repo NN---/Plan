@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Plan", "Plan\Plan.vcproj", "{38A23D32-55CD-41B6-A5B5-62F73D3890C4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Event", "Event\Event.vcproj", "{127F425C-E99F-4D08-BAA8-E6A5D1B0741F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{38A23D32-55CD-41B6-A5B5-62F73D3890C4}.Debug.ActiveCfg = Debug|Win32
+		{38A23D32-55CD-41B6-A5B5-62F73D3890C4}.Debug.Build.0 = Debug|Win32
+		{38A23D32-55CD-41B6-A5B5-62F73D3890C4}.Release.ActiveCfg = Release|Win32
+		{38A23D32-55CD-41B6-A5B5-62F73D3890C4}.Release.Build.0 = Release|Win32
+		{127F425C-E99F-4D08-BAA8-E6A5D1B0741F}.Debug.ActiveCfg = Debug|Win32
+		{127F425C-E99F-4D08-BAA8-E6A5D1B0741F}.Debug.Build.0 = Debug|Win32
+		{127F425C-E99F-4D08-BAA8-E6A5D1B0741F}.Release.ActiveCfg = Release|Win32
+		{127F425C-E99F-4D08-BAA8-E6A5D1B0741F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

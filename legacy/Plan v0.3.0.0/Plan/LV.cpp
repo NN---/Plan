@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include "LV.h"
+
+// static members
+
+// LVItemInfo
+LVITEMINFO_IMPLEMENT_NN(LVItemNull)
+LVITEMINFO_IMPLEMENT_NN(LVItemEdit)
+LVITEMINFO_IMPLEMENT_NN(LVItemEditNumber)
+LVITEMINFO_IMPLEMENT_NN(LVItemHotKey)
+LVITEMINFO_IMPLEMENT_NN(LVItemDateTime)
+LVITEMINFO_IMPLEMENT_NN(LVItemDateTime_UpDown)
+LVITEMINFO_IMPLEMENT_NN(LVItemComboBox)
+
+
+			

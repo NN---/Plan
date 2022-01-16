@@ -1,0 +1,10 @@
+#include "StdAfx.h"
+#include "LV.h"
+#include "Column.h"
+
+LVITEMINFO_IMPLEMENT(CColumnEvent)
+LVITEMINFO_IMPLEMENT(CColumnDate)
+LVITEMINFO_IMPLEMENT(CColumnTime)
+LVITEMINFO_IMPLEMENT(CColumnSchedule)
+LVITEMINFO_IMPLEMENT(CColumnHotKey)
+LVITEMINFO_IMPLEMENT(CColumnDelay)

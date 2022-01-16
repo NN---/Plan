@@ -1,0 +1,34 @@
+  =======================
+ =========================
+========= Plan ============
+ =========================
+  =======================
+
+[0.2.6.0] build 22
+Added Floating Menu 
+
+[0.2.6.0] build 21
+Added fourth column ( Schedule , now you can Schedule your Events )
+The Events are now saved in the Registry. You do not need to choose file.
+Not all features are functioning, yet...
+
+[0.2.6.0] build 1
+New design
+The events are now in the libraries.
+Contact me to create your own Event Library.
+
+[0.25]
+Features:
+Message Event
+ShutDown Event ( Not working on WinXP )
+RunProgram Event
+Always prompts to choose work file ( Create New or Open Existing )
+Options , General , Confirmations
+Sort
+Drag and Drop
+Register extention .pln
+Keyboard functioning ( Enter selects the Events )
+Check Event
+
+[0.10]
+First Release

@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Plan - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Plan.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\K\Desktop\Plan v0.244\Plan.rc"" 
+Creating temporary file "C:\DOCUME~1\K\LOCALS~1\Temp\RSP2E.tmp" with contents
+[
+/nologo /MD /W3 /O1 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/Plan.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\K\Desktop\Plan v0.244\ConfirmationsPage.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\Defines.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\Event.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\GeneralPage.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\MainFrame.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\MessageEvent.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\Plan.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\PlanDoc.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\PlanView.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\PropertiesBar.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\RunProgramEvent.cpp"
+"C:\Documents and Settings\K\Desktop\Plan v0.244\ShutDownEvent.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\K\LOCALS~1\Temp\RSP2E.tmp" 
+Creating temporary file "C:\DOCUME~1\K\LOCALS~1\Temp\RSP2F.tmp" with contents
+[
+/nologo /MD /W3 /O1 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/Plan.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\K\Desktop\Plan v0.244\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\K\LOCALS~1\Temp\RSP2F.tmp" 
+Creating temporary file "C:\DOCUME~1\K\LOCALS~1\Temp\RSP30.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Plan.pdb" /machine:I386 /out:"Release/Plan.exe" 
+".\Release\ConfirmationsPage.obj"
+".\Release\Defines.obj"
+".\Release\Event.obj"
+".\Release\GeneralPage.obj"
+".\Release\MainFrame.obj"
+".\Release\MessageEvent.obj"
+".\Release\Plan.obj"
+".\Release\PlanDoc.obj"
+".\Release\PlanView.obj"
+".\Release\PropertiesBar.obj"
+".\Release\RunProgramEvent.obj"
+".\Release\ShutDownEvent.obj"
+".\Release\StdAfx.obj"
+".\Release\Plan.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\K\LOCALS~1\Temp\RSP30.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConfirmationsPage.cpp
+Defines.cpp
+Event.cpp
+GeneralPage.cpp
+MainFrame.cpp
+MessageEvent.cpp
+Plan.cpp
+PlanDoc.cpp
+PlanView.cpp
+PropertiesBar.cpp
+RunProgramEvent.cpp
+ShutDownEvent.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Plan.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

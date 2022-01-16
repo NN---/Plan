@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: message - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/message.res" /d "NDEBUG" "C:\Documents and Settings\K\Desktop\Plan\Message\message.rc"" 
+Creating temporary file "C:\TEMP\RSP715.tmp" with contents
+[
+/nologo /MT /W4 /O1 /I "..\Event" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\K\Desktop\Plan\Message\message.c"
+]
+Creating command line "cl.exe @C:\TEMP\RSP715.tmp" 
+Creating temporary file "C:\TEMP\RSP716.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/Message.pdb" /machine:I386 /out:"Release/Message.dll" /implib:"Release/Message.lib" 
+".\Release\message.obj"
+".\Release\message.res"
+]
+Creating command line "link.exe @C:\TEMP\RSP716.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+message.c
+C:\Documents and Settings\K\Desktop\Plan\Message\message.c(41) : warning C4100: 'lpvReserved' : unreferenced formal parameter
+Linking...
+   Creating library Release/Message.lib and object Release/Message.exp
+
+
+
+<h3>Results</h3>
+Message.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

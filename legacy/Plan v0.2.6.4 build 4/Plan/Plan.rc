@@ -1,0 +1,481 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+//1                       RT_MANIFEST             "Res\\Plan.exe.manifest"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "//1                       RT_MANIFEST             ""Res\\\\Plan.exe.manifest""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PLANFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Import...\tCtrl+I",          ID_FILE_IMPORT
+        MENUITEM "&Export...\tCtrl+E",          ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Event"
+    BEGIN
+        MENUITEM "&Add Event\tCtrl+A",          ID_EVENT_ADD
+        MENUITEM "&Update Event\tCtrl+U",       ID_EVENT_UPDATE
+        MENUITEM "&Delete Event\tCtrl+D",       ID_EVENT_DELETE
+        POPUP "&Test"
+        BEGIN
+            MENUITEM "&Test\tCtrl+T",               ID_EVENT_TEST
+            MENUITEM "&Simple Test\tCtrl+S",        65535
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&ToolBar"
+        BEGIN
+            MENUITEM "&ToolBar\tCtrl+Shift+T",      ID_VIEW_TOOLBAR
+            MENUITEM "&Customize...\tCtrl+Alt+Shift+T", 
+                                                    ID_VIEW_STATUSBAR_CUSTOMIZE
+
+        END
+        POPUP "&StatusBar"
+        BEGIN
+            MENUITEM "&StatusBar\tCtrl+Shift+S",    ID_VIEW_STATUS_BAR
+            MENUITEM "&Customize...\tCtrl+Alt+Shift+T", 
+                                                    ID_VIEW_STATUSBAR_CUSTOMIZE
+
+        END
+        POPUP "&EventBar"
+        BEGIN
+            MENUITEM "&EventBar\tCtrl+Shift+E",     ID_VIEW_EVENTBAR
+        END
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Enable/Disable\tF2",         ID_TOOLS_ENABLEDISABLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tF4",             ID_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...\tF1",               ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_TEST MENU 
+BEGIN
+    POPUP "&Test"
+    BEGIN
+        MENUITEM "&Test\tCtrl+T",               40007
+        MENUITEM "&Simple Test\tCtrl+S",        40008
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_PLANFRAME ACCELERATORS 
+BEGIN
+    VK_F1,          ID_APP_ABOUT,           VIRTKEY, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    "A",            ID_EVENT_ADD,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EVENT_DELETE,        VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_EVENT_UPDATE,        VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FILE_IMPORT,         VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_TOOLS_ENABLEDISABLE, VIRTKEY, NOINVERT
+    VK_F4,          ID_TOOLS_OPTIONS,       VIRTKEY, NOINVERT
+    "E",            ID_VIEW_EVENTBAR,       VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "S",            ID_VIEW_STATUS_BAR,     VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "T",            ID_VIEW_TOOLBAR,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,2,6,4
+ PRODUCTVERSION 0,2,6,4
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "NN"
+            VALUE "FileDescription", "Plan"
+            VALUE "FileVersion", "0, 2, 6, 4"
+            VALUE "InternalName", "Plan"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "Plan.exe"
+            VALUE "ProductVersion", "0, 2, 6, 4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_PLANFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_IMPORT
+    BUTTON      ID_FILE_EXPORT
+    SEPARATOR
+    BUTTON      ID_EVENT_ADD
+    BUTTON      ID_EVENT_UPDATE
+    BUTTON      ID_EVENT_DELETE
+    SEPARATOR
+    BUTTON      ID_EVENT_TEST
+    SEPARATOR
+    BUTTON      ID_TOOLS_ENABLEDISABLE
+    BUTTON      ID_TOOLS_OPTIONS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_PLANFRAME           BITMAP                  "Res\\ToolBar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_PLANFRAME           ICON                    "Res\\Plan.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 234, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Plan v0.2.6.4"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,60,40,15,BS_FLAT
+    LTEXT           "Plan version 0.2.6.4",IDC_STATIC,30,5,71,9,0,
+                    WS_EX_STATICEDGE
+    ICON            IDR_PLANFRAME,IDC_STATIC,3,3,20,20
+    LTEXT           "This program is freeware and provided ""AS-IS""\nI take no responsibility for any damage this program cause.\nCopyright (C) 2002-2003\nNN.",
+                    IDC_STATIC,30,20,200,35,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "nn-mail@yandex.ru",IDC_EMAIL,10,60,80,15,BS_FLAT
+    PUSHBUTTON      "http://nnsite.narod.ru",IDC_SITE,100,60,80,15,BS_FLAT
+END
+
+IDD_EVENTBAR DIALOGEX 0, 0, 265, 35
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "EventPlace",IDC_EVENTPLACE,0,0,265,34,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_GENERAL DIALOGEX 0, 0, 140, 74
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "&Load on start up",IDC_LOADONSTARTUP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,5,67,8
+    CONTROL         "&Show Tray Icon",IDC_SHOWTRAYICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,64,8
+    LTEXT           "Minimize:",IDC_STATIC,5,35,30,8
+    COMBOBOX        IDC_MINIMIZE,40,35,65,15,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Close:",IDC_STATIC,5,55,21,8
+    COMBOBOX        IDC_CLOSE,40,55,65,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONFIRMATIONS DIALOGEX 0, 0, 141, 74
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Confirmations"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&Add Event",IDC_CONFIRMADDEVENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,35,57,8
+    CONTROL         "&Update Event",IDC_CONFIRMUPDATEEVENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,50,57,8
+    CONTROL         "&Delete Event",IDC_CONFIRMDELETEEVENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,62,5,57,8
+    CONTROL         "&Empty PropertiesBar",IDC_CONFIRMEMPTYPROPERTIESBAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,20,79,10
+    CONTROL         "&Import",IDC_CONFIRMIMPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,20,34,8
+    CONTROL         "&Export",IDC_CONFIRMEXPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,5,37,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_EVENTBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 28
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_CONFIRMATIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_IMPORT          "Import events from file\nImport"
+    ID_FILE_EXPORT          "Export events to file\nExport"
+    ID_EVENT_ADD            "Add new event\nAdd Event"
+    ID_EVENT_UPDATE         "Update selected event\nUpdate Event"
+    ID_EVENT_DELETE         "Delete selected event\nDelete Event"
+    ID_EVENT_TEST           "Test event\nTest event"
+    ID_TOOLS_ENABLEDISABLE  "Enable or disable program\nEnable/Disable"
+    ID_TOOLS_OPTIONS        "Display options dialog\nOptions"
+    ID_VIEW_TOOLBAR_CUSTOMIZE "Customize ToolBar\nCustomize ToolBar"
+    ID_VIEW_STATUSBAR_CUSTOMIZE "Customize StatusBar\nCustomize StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide ToolBar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide StatusBar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information\nAbout"
+    ID_APP_EXIT             "Exit program\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+    IDS_SUNDAY              "Sunday"
+    IDS_MONDAY              "Monday"
+    IDS_TUESDAY             "Tuesday"
+    IDS_WEDNESDAY           "Wednesday"
+    IDS_THURSDAY            "Thursday"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_PLANFRAME           "Plan v0.2.6.4"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FRIDAY              "Friday"
+    IDS_SATURDAY            "Saturday"
+    IDS_ENABLED             "Enabled"
+    IDS_DISABLED            "Disabled"
+    IDS_EVENT               "Event"
+    IDS_DATE                "Date"
+    IDS_TIME                "Time"
+    IDS_SCHEDULE            "Schedule"
+    IDS_HOTKEY              "HotKey"
+    IDS_ONCE                "Once"
+    IDS_ERROR               "Error"
+    IDE_UNKNOWN             "Unknown Error."
+    IDS_NORMAL              "Normal"
+    IDS_TOTRAY              "To Tray"
+    IDS_ASKME               "Ask me"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_EVENTBAR        "Show or hide EventBar\nToggle EventBar"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

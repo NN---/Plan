@@ -1,0 +1,99 @@
+  =======================
+ =========================
+========= Plan ============
+ =========================
+  =======================
+
+[0.2.6.3] - June, 10
+The program was rewrited using VC 7.1
+[Added]
+ TrayIcon
+ HotKey
+ Errors
+ Command line argument (-tray : hide to tray)
+ Options, Confirmations page.
+[Updated]
+ Options, General page.
+[Fixed]
+ Options
+ In days list wasn't Saturday.
+ RunFile Event button Browse did not show .exe files.
+
+[0.2.6.2] - May, 23 2003
+[Fixed]
+ Load on startup did not work.
+ Some minor bugs.
+
+[0.2.6.1] - May, 1 2003
+[Added]
+ Options
+ Command line arguments (-min : minimize, -max : maximize)
+ Message Event, ShutDown Event, RunFile Event have been updated to
+  version 0.2.6.1.
+[Fixed]
+ RunFile Event button Browse did not work.
+
+[0.2.6.1] build 1 - April, 30 2003
+[Added]
+ The program was rewrited using WTL.
+ WindowsXP only supported.
+ MenuItem View->Properties hide or show PropertiesBar.
+
+[0.2.6.0] build 25 - April, 18 2003
+[Added]
+ UpdateEvent is now working !
+ Export/Import is now working !
+ Selects Event by pressing Enter or DoubleClicking on it.
+ Can now Do Events. No Scheduling , yet...
+ Added ShutDown Event.
+ Added RunFile Event.
+ Customizable ToolBar.
+[Fixed]
+ DeleteEvent.
+ Some minor bugs.
+
+[0.2.6.0] build 24 - April, 10 2003
+[Added]
+ DeleteEvent is now working !
+[Fixed]
+ AddEvent.
+
+[0.2.6.0] build 23 - April, 06 2003
+[Fixed]
+ Libraries loaded twice -> the program starts faster.
+ Some errors.
+[Added]
+ AddEvent is now working !
+ 
+[0.2.6.0] build 22
+[Added]
+ Floating Menu.
+
+[0.2.6.0] build 21
+[Added]
+ Schedule column ( Schedule , now you can Schedule your Events )
+ The Events are now saved in the Registry. There is no need to choose file.
+
+[0.2.6.0] build 1
+[Added]
+ New look.
+ Tooltips are now in the Properties too.
+ The events are now in the libraries.
+ Contact me to create your own Event Library.
+Not all features are functioning, yet...
+
+[0.25] - November 2002
+Features:
+Message Event
+ShutDown Event ( Not working on WinXP yet...)
+RunProgram Event
+Always prompts to choose work file ( Create New or Open Existing )
+Options , General , Confirmations
+Sort
+Drag and Drop
+Register extention .pln
+Keyboard functioning ( Enter selects the Events )
+Check Event
+
+[0.10] - April 2002
+First Release

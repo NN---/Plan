@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Plan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "F:\TEMP\RSP68.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /I "..\Event" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Debug/Plan.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\K\Desktop\_Plan\Plan\MainFrame.cpp"
+"C:\Documents and Settings\K\Desktop\_Plan\Plan\Plan.cpp"
+"C:\Documents and Settings\K\Desktop\_Plan\Plan\PlanDoc.cpp"
+"C:\Documents and Settings\K\Desktop\_Plan\Plan\PlanView.cpp"
+"C:\Documents and Settings\K\Desktop\_Plan\Plan\PropertiesBar.cpp"
+]
+Creating command line "cl.exe @F:\TEMP\RSP68.tmp" 
+Creating temporary file "F:\TEMP\RSP69.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Plan.pdb" /debug /machine:I386 /out:"Debug/Plan.exe" /pdbtype:sept 
+".\Debug\MainFrame.obj"
+".\Debug\Plan.obj"
+".\Debug\PlanDoc.obj"
+".\Debug\PlanView.obj"
+".\Debug\PropertiesBar.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Plan.res"
+]
+Creating command line "link.exe @F:\TEMP\RSP69.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrame.cpp
+Plan.cpp
+PlanDoc.cpp
+PlanView.cpp
+PropertiesBar.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Plan.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

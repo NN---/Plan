@@ -1,0 +1,620 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Plan.ico"
+IDR_PLANTYPE            ICON    DISCARDABLE     "res\\PlanDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_STATEIMAGE          BITMAP  DISCARDABLE     "res\\StateImage.bmp"
+IDB_SORTASCENDING       BITMAP  DISCARDABLE     "res\\SortAscending.bmp"
+IDB_SORTDESCENDING      BITMAP  DISCARDABLE     "res\\SortDescending.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EVENT_ADDEVENT
+    BUTTON      ID_EVENT_UPDATEEVENT
+    BUTTON      ID_EVENT_REMOVEEVENT
+    BUTTON      ID_TOOLS_OPTIONS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New...\tCtrl+N",             ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+    END
+    POPUP "&Event"
+    BEGIN
+        MENUITEM "&Add Event\tCtrl+A",          ID_EVENT_ADDEVENT
+        MENUITEM "&Update Event\tCtrl+U",       ID_EVENT_UPDATEEVENT
+        MENUITEM "&Remove Event\tCtrl+R",       ID_EVENT_REMOVEEVENT
+        MENUITEM "C&lear Properties\tCtrl+C",   ID_EVENT_CLEARPROPERTIES
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar\tCtrl+Shift+T",      ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar\tCtrl+Shift+S",   ID_VIEW_STATUS_BAR
+        MENUITEM "&Properties\tAlt+Enter",      ID_VIEW_PROPERTIES
+        MENUITEM "&Enable/Disable\tF2",         ID_VIEW_ENABLEDISABLE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options...\tAlt+O",          ID_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Plan...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EVENT_ADDEVENT,      VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EVENT_CLEARPROPERTIES, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_TOOLS_OPTIONS,       VIRTKEY, ALT, NOINVERT
+    "R",            ID_EVENT_REMOVEEVENT,   VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_VIEW_STATUS_BAR,     VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "T",            ID_VIEW_TOOLBAR,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "U",            ID_EVENT_UPDATEEVENT,   VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_VIEW_ENABLEDISABLE,  VIRTKEY, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_RETURN,      ID_VIEW_PROPERTIES,     VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Plan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Plan Version 0.25",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) NN 2002\nE-Mail : nn-mail@yandex.ru",
+                    IDC_STATIC,40,25,87,17
+END
+
+IDD_PROPERTIES DIALOGEX 0, 0, 125, 235
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_EVENTS,30,10,81,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,30,35,55,12
+    CONTROL         "DateTimePicker2",IDC_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,30,55,55,
+                    12
+    PUSHBUTTON      "&Add",ID_EVENT_ADDEVENT,10,75,45,15
+    PUSHBUTTON      "&Update",ID_EVENT_UPDATEEVENT,70,75,45,15
+    PUSHBUTTON      "&Remove",ID_EVENT_REMOVEEVENT,10,100,45,15
+    PUSHBUTTON      "C&lear",ID_EVENT_CLEARPROPERTIES,70,100,45,15
+    LTEXT           "Event :",IDC_STATIC,5,10,23,8
+    LTEXT           "Date :",IDC_STATIC,5,35,22,8
+    LTEXT           "Time :",IDC_STATIC,5,55,22,8
+    LTEXT           "",IDC_EVENTPLACE,5,120,110,110,NOT WS_VISIBLE
+END
+
+IDD_MESSAGE DIALOG DISCARDABLE  0, 0, 110, 110
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CAPTION,10,20,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXT,10,60,90,36,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN
+    LTEXT           "Caption :",IDC_STATIC,10,5,34,9
+    LTEXT           "Text :",IDC_STATIC,10,45,24,8
+END
+
+IDD_SHUTDOWN DIALOG DISCARDABLE  0, 0, 110, 110
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_OPERATION,10,25,73,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Operation :",IDC_STATIC,10,10,40,8
+END
+
+IDD_GENERAL DIALOG DISCARDABLE  0, 0, 170, 65
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Load on StartUp",IDC_LOADONSTARTUP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,5,70,8
+    CONTROL         "&Remove event",IDC_REMOVEEVENT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,95,20,63,8
+    CONTROL         "&Check event",IDC_CHECKEVENT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,95,34,68,10
+    GROUPBOX        "After doing event",IDC_STATIC,85,5,80,45
+    CONTROL         "Create &backup file",IDC_BACKUPFILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,20,75,8
+END
+
+IDD_RUNPROGRAM DIALOG DISCARDABLE  0, 0, 110, 110
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PATH,5,20,85,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,90,20,15,12
+    EDITTEXT        IDC_PARAMETERS,5,60,85,12,ES_AUTOHSCROLL
+    LTEXT           "Path :",IDC_STATIC,10,5,25,8
+    LTEXT           "Parameters :",IDC_STATIC,10,45,39,8
+END
+
+IDD_CONFIRMATIONS DIALOG DISCARDABLE  0, 0, 170, 65
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Confirmations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Add",IDC_ADD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,
+                    5,55,8
+    CONTROL         "&Remove",IDC_REMOVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,35,43,8
+    CONTROL         "E&xit",IDC_EXIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    10,50,27,8
+    CONTROL         "&Update",IDC_UPDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,20,45,8
+END
+
+IDD_NEWFILE DIALOG DISCARDABLE  0, 0, 85, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Plan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Create &New File",ID_FILE_NEW,10,10,65,15
+    PUSHBUTTON      "&Open Existing File",ID_FILE_OPEN,10,35,65,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,10,60,65,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,25,0,0
+ PRODUCTVERSION 0,25,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "NN\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "0, 25, 0, 0\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Plan.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "0, 25, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 103
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 103
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_RUNPROGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 103
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_CONFIRMATIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_NEWFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPERTIES DLGINIT
+BEGIN
+    IDC_EVENTS, 0x403, 8, 0
+0x654d, 0x7373, 0x6761, 0x0065, 
+    IDC_EVENTS, 0x403, 9, 0
+0x6853, 0x7475, 0x6f44, 0x6e77, "\000" 
+    IDC_EVENTS, 0x403, 12, 0
+0x7552, 0x206e, 0x7250, 0x676f, 0x6172, 0x006d, 
+    0
+END
+
+IDD_SHUTDOWN DLGINIT
+BEGIN
+    IDC_OPERATION, 0x403, 10, 0
+0x6853, 0x7475, 0x4420, 0x776f, 0x006e, 
+    IDC_OPERATION, 0x403, 8, 0
+0x6552, 0x7473, 0x7261, 0x0074, 
+    IDC_OPERATION, 0x403, 8, 0
+0x6f4c, 0x2067, 0x664f, 0x0066, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSORDRAG          CURSOR  DISCARDABLE     "res\\CursorDrag.cur"
+IDC_CURSORNODRAG        CURSOR  DISCARDABLE     "res\\CursorNoDrag.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Plan v0.25\n\nPlan\nPlan Files (*.pln)\n.pln\nPlan.File\nPlan File"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Plan"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new file\nNew"
+    ID_FILE_OPEN            "Open an existing file\nOpen"
+    ID_FILE_SAVE_AS         "Save file with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this file"
+    ID_FILE_MRU_FILE2       "Open this file"
+    ID_FILE_MRU_FILE3       "Open this file"
+    ID_FILE_MRU_FILE4       "Open this file"
+    ID_FILE_MRU_FILE5       "Open this file"
+    ID_FILE_MRU_FILE6       "Open this file"
+    ID_FILE_MRU_FILE7       "Open this file"
+    ID_FILE_MRU_FILE8       "Open this file"
+    ID_FILE_MRU_FILE9       "Open this file"
+    ID_FILE_MRU_FILE10      "Open this file"
+    ID_FILE_MRU_FILE11      "Open this file"
+    ID_FILE_MRU_FILE12      "Open this file"
+    ID_FILE_MRU_FILE13      "Open this file"
+    ID_FILE_MRU_FILE14      "Open this file"
+    ID_FILE_MRU_FILE15      "Open this file"
+    ID_FILE_MRU_FILE16      "Open this file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_EVENT               "Event"
+    IDS_DATE                "Date"
+    IDS_TIME                "Time"
+    IDS_MESSAGE             "Message"
+    IDS_SHUTDOWN            "ShutDown"
+    IDS_RUNPROGRAM          "Run Program"
+    IDS_OPTIONS             "Options"
+    IDS_ERROR               "Error"
+    IDS_CANNOTOPENFILE      "Cannot open file"
+    IDS_EVENTCLEAR          "You must fill all fields in Event Properties dialog"
+    IDS_TWOEVENTS           "Cannot create two events that have same date and time"
+    IDS_SELECTITEM          "You have not selected any item"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AREYOUSURETOADD     "Are you sure you want to Add this event ?"
+    IDS_AREYOUSURETOUPDATE  "Are you sure you want to Update this event ?"
+    IDS_AREYOUSURETOREMOVE  "Are you sure you want to Remove this event ?"
+    IDS_AREYOUSURETOEXIT    "Are you sure you want to Exit ?"
+    IDS_ENABLED             "Enabled"
+    IDS_DISABLED            "Disabled"
+    IDS_UPDATETYPE          "Cannot update event with different type"
+    IDS_TOOLBAR             "Toolbar"
+    IDS_EVENTPROPERTIES     "Event Properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EVENT_ADDEVENT       "Add new event\nAdd Event"
+    ID_EVENT_UPDATEEVENT    "Update selected event\nUpdate Event"
+    ID_EVENT_REMOVEEVENT    "Remove selected event\nRemove Event"
+    ID_EVENT_CLEARPROPERTIES "Clear Event Properties dialog\nClear Properties"
+    ID_VIEW_PROPERTIES      "Show Event Properties\nProperties"
+    ID_TOOLS_OPTIONS        "Show options dialog\nOptions"
+    ID_VIEW_ENABLEDISABLE   "Enable or Disable program\nEnable/Disable"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_UNTITLED        "Default"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0xD, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE 0xD, 0x1
+#pragma code_page(1255)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Plan.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Unknown language: 0xD, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Plan.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
